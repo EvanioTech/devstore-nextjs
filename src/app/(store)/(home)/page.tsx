@@ -29,7 +29,7 @@ className="group relative col-span-3 row-span-3 rounded-lg bg-zinc-900 overflow-
 >
   <Image src="/moletom-ai-side.png" 
   alt="moletom-ai-side"
-  className="group-hover:scale-115 transition-transform duration-200 ease-in-out"
+  className="group-hover:scale-115 transition-transform duration-300 ease-in-out"
   width={920} 
   height={920} 
   quality={100}  />
@@ -45,7 +45,7 @@ className="group relative col-span-3 row-span-3 rounded-lg bg-zinc-900 overflow-
 >
   <Image src="/moletom-java.png" 
   alt="moletom-ai-side"
-  className="group-hover:scale-115 transition-transform duration-200 ease-in-out"
+  className="group-hover:scale-115 transition-transform duration-300 ease-in-out"
   width={920} 
   height={920} 
   quality={100}  />
