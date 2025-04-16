@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 
+
 export default function ProductPage() {
   return (
     <div className="relative grid max-h-[860px] grid-cols-3">
@@ -29,25 +30,30 @@ export default function ProductPage() {
         <span className="inline-block rounded-full bg-violet-500 px-5 py-2.5  font-semibold">
             R$ 129,90
         </span>
+        <span className="text-sm text-zinc-400">Em 12x s/ juros de 10,75</span>
         </div>
 
         <div className="mt-8 space-y-4">
             <span className="block font-semibold">Tamanhos</span>
 
             <div className="flex gap-2">
-                <button className="rounded-full bg-zinc-900 px-5 py-2.5 font-semibold transition-colors hover:bg-zinc-800">
+                <button type="button" className="rounded-full bg-zinc-900 px-5 py-2.5 font-semibold transition-colors hover:bg-zinc-800">
                     P
                 </button>
-                <button className="rounded-full bg-zinc-900 px-5 py-2.5 font-semibold transition-colors hover:bg-zinc-800">
+                <button type="button" className="rounded-full bg-zinc-900 px-5 py-2.5 font-semibold transition-colors hover:bg-zinc-800">
                     M
                 </button>
-                <button className="rounded-full bg-zinc-900 px-5 py-2.5 font-semibold transition-colors hover:bg-zinc-800">
+                <button type="button" className="rounded-full bg-zinc-900 px-5 py-2.5 font-semibold transition-colors hover:bg-zinc-800">
                     G
                 </button>
-                <button className="rounded-full bg-zinc-900 px-5 py-2.5 font-semibold transition-colors hover:bg-zinc-800">
+                <button type="button" className="rounded-full bg-zinc-900 px-5 py-2.5 font-semibold transition-colors hover:bg-zinc-800">
                     GG
                 </button>
             </div>
+
+            <button type="button" className="mt-8 flex h-12 w-70 items-center justify-center rounded-full bg-emerald-600 font-semibold transition-colors hover:bg-emerald-500">
+                Adicionar ao carrinho
+            </button>
         </div>
 
       </div>
