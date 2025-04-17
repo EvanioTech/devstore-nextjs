@@ -43,7 +43,7 @@ className="group relative col-span-6 row-span-6 rounded-lg bg-zinc-900 overflow-
 {otherProducts.map((product) => (
   <Link
   key={product.id}
-  href={`/${product.slug}`}
+  href={`/product/${product.slug}`}
   className="group relative col-span-3 row-span-3 rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
   >
     <Image src={product.image}
