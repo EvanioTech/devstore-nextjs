@@ -26,6 +26,17 @@ export async function generateMetadata({ params }: ProductProps): Promise<Metada
   };
 }
 
+export async function generateStaticParams() {
+  const response = await api("/products/featured", );
+  if (!response.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  const products = await response.json();
+  return products.map((product: { slug: string }) => ({
+    slug: product.slug,
+  }));
+}
+
 
 export default async function ProductPage({ params }: ProductProps) {
  
