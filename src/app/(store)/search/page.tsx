@@ -43,7 +43,7 @@ export default async function Search() {
                 className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
                 >
 
-                    <Image src='/moletom-never-stop-learning.png'
+                    <Image src='/camiseta-dowhile-2022.png'
                     className="group-hover:scale-105 transition-transform duration-500 "
                     width={480}
                     height={480}
@@ -66,7 +66,7 @@ export default async function Search() {
                 className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
                 >
 
-                    <Image src='/moletom-never-stop-learning.png'
+                    <Image src='/moletom-ai-side.png'
                     className="group-hover:scale-105 transition-transform duration-500 "
                     width={480}
                     height={480}
@@ -89,7 +89,7 @@ export default async function Search() {
                 className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
                 >
 
-                    <Image src='/moletom-never-stop-learning.png'
+                    <Image src='/moletom-java.png'
                     className="group-hover:scale-105 transition-transform duration-500 "
                     width={480}
                     height={480}
