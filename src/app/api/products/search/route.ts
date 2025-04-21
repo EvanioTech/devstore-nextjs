@@ -5,19 +5,25 @@ import type { NextApiRequest } from "next";
 export async function GET(request: NextApiRequest) {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    
-   
-  if (!request.url) {
-    return Response.json({ error: "Invalid request URL" }, { status: 400 });
-  }
-  const { searchParams } = new URL(request.url);
+    if (!request.url) {
+        throw new Error("Request URL is undefined");
+    }
+    const url = new URL(request.url);
+    const searchParams = url.searchParams;
+    const query = searchParams.get("q");
 
-  const query = z.string().parse(searchParams.get("query"));
-  const products = data.products.filter((product) =>   product.title.toLowerCase().includes(query.toLowerCase())
-  )
-  
+    const querySchema = z.string().min(1, "Query cannot be empty");
+    const parsedQuery = querySchema.parse(query);
 
-  return Response.json(products)
+    const filteredProducts = data.products.filter((product) =>
+        product.title.toLowerCase().includes(parsedQuery.toLowerCase())
+    );
 
+    return new Response(JSON.stringify(filteredProducts), {
+        status: 200,
+        headers: {
+            "Content-Type": "application/json",
+            "Cache-Control": "public, max-age=3600", // Cache for 1 hour
+        },
+    });
 }
-   
