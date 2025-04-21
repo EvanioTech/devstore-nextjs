@@ -1,38 +1,117 @@
+import Link from "next/link";
+import Image from "next/image";
+import { Metadata } from "next";
+
+import { Product } from "@/data/types/product";
+import { api } from "@/data/api";
+
 export default async function Search() {
-    await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate a delay
     return (
-        <div>
-            <h1>Search</h1>
-            <div className="animate-pulse">
-                <div className="h-4 bg-gray-200 rounded w-1/2 mb-2"></div>
-                <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
-                <div className="h-4 bg-gray-200 rounded w-full"></div>
-            </div>
-            <div className="flex justify-center mt-4">
-                <svg
-                    className="animate-spin h-5 w-5 text-gray-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+        <div className="flex flex-col gap-4">
+            
+            <p className="text-sm">
+                resultados para: <span className="font-semibold">moletom</span>
+                </p>
+            
+            
+            <div className="grid grid-cols-3 gap-6">
+                <Link
+                href={`/product/moletom-never-stop-learning`}
+                className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
                 >
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="12" y1="2" x2="12" y2="6" />
-                    <line x1="12" y1="18" x2="12" y2="22" />
-                    <line x1="2" y1="12" x2="6" y2="12" />
-                    <line x1="18" y1="12" x2="22" y2="12" />
-                    <line x1="4.22" y1="4.22" x2="7.76" y2="7.76" />
-                    <line x1="16.24" y1="16.24" x2="19.78" y2="19.78" />
-                    <line x1="4.22" y1="19.78" x2="7.76" y2="16.24" />  
-                    <line x1="16.24" y1="7.76" x2="19.78" y2="4.22" />
-                </svg>
+
+                    <Image src='/moletom-never-stop-learning.png'
+                    className="group-hover:scale-105 transition-transform duration-500 "
+                    width={480}
+                    height={480}
+                    quality={100}
+                    alt="moletom-never-stop-learning 1" />
+                    
+
+                    <div className="absolute bottom-10 right-10 h-12 flex items-center gap-2 max-w-[280px] rounded-full border-2 border-zinc-500 bg-black/60 p-1 pl-5">
+                        <span className="text-sm truncate">moletom stop</span>
+                        <span className="flex h-full items-center justify-center rounded-full bg-violet-500 px-4 font-semibold">{Number(129).toLocaleString('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL',
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                        })}</span>
+                        </div>
+                </Link>
+                <Link
+                href={`/product/moletom-never-stop-learning`}
+                className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
+                >
+
+                    <Image src='/moletom-never-stop-learning.png'
+                    className="group-hover:scale-105 transition-transform duration-500 "
+                    width={480}
+                    height={480}
+                    quality={100}
+                    alt="moletom-never-stop-learning 1" />
+                    
+
+                    <div className="absolute bottom-10 right-10 h-12 flex items-center gap-2 max-w-[280px] rounded-full border-2 border-zinc-500 bg-black/60 p-1 pl-5">
+                        <span className="text-sm truncate">moletom stop</span>
+                        <span className="flex h-full items-center justify-center rounded-full bg-violet-500 px-4 font-semibold">{Number(129).toLocaleString('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL',
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                        })}</span>
+                        </div>
+                </Link>
+                <Link
+                href={`/product/moletom-never-stop-learning`}
+                className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
+                >
+
+                    <Image src='/moletom-never-stop-learning.png'
+                    className="group-hover:scale-105 transition-transform duration-500 "
+                    width={480}
+                    height={480}
+                    quality={100}
+                    alt="moletom-never-stop-learning 1" />
+                    
+
+                    <div className="absolute bottom-10 right-10 h-12 flex items-center gap-2 max-w-[280px] rounded-full border-2 border-zinc-500 bg-black/60 p-1 pl-5">
+                        <span className="text-sm truncate">moletom stop</span>
+                        <span className="flex h-full items-center justify-center rounded-full bg-violet-500 px-4 font-semibold">{Number(129).toLocaleString('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL',
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                        })}</span>
+                        </div>
+                </Link>
+                <Link
+                href={`/product/moletom-never-stop-learning`}
+                className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
+                >
+
+                    <Image src='/moletom-never-stop-learning.png'
+                    className="group-hover:scale-105 transition-transform duration-500 "
+                    width={480}
+                    height={480}
+                    quality={100}
+                    alt="moletom-never-stop-learning 1" />
+                    
+
+                    <div className="absolute bottom-10 right-10 h-12 flex items-center gap-2 max-w-[280px] rounded-full border-2 border-zinc-500 bg-black/60 p-1 pl-5">
+                        <span className="text-sm truncate">moletom stop</span>
+                        <span className="flex h-full items-center justify-center rounded-full bg-violet-500 px-4 font-semibold">{Number(129).toLocaleString('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL',
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                        })}</span>
+                        </div>
+                </Link>
+
+                        
+                    
             </div>
-            <div className="flex justify-center mt-4">
-                <p className="text-gray-500">Loading data...</p>
+            
             </div>
-        </div>
-    );
+    )
 }
